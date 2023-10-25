@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#class{
+   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(image/night.jpg);   
+width: 100%;
+height: 100vh;
+background-position: center;
+background-size: cover;
+position: absolute;
+}
+.sad{
+    color: rgb(250, 250, 250);
+    font-family: cursive;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 30px;
+}
+.sae{
+    color: rgb(250, 250, 250);
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+.sae span{
+    color: yellow;
+}
+.cane{
+    width: 60%;
+    height: 50vh;
+    border-radius: 100px;
+    border: 1px solid white;
+    margin: 40px auto;
+    box-shadow: 0 2px 10px red;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.cane .sui{
+    border-radius: 5px;
+    border: 1px solid rgb(7, 7, 7);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     transition: .9s; 
+    cursor: pointer;
+    background: rgb(243, 179, 179);
+    position: relative;
+}
+.cane .sui img{
+    border-radius: 5px;
+}
+.cane .sui::after{
+    content: '';
+    background: url(image/f2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    /* transition: .1s; */
+    width: 0%;
+    height: 80%;
+    left: 0;
+    bottom: 20px;
+    border-radius: 5px;
+}
+.cane .sui:hover::after{
+    width: 100%;
+}
+.cane .sui:hover{
+    margin-top: 20px;
+    box-shadow: 0 2px 5px blue;
+    color: white;
+    border: 1px solid #faf9f9;
+    background: none;
+}
+#sidenav{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right:-250px ;
+    top: 0;
+    z-index: 2;
+    background: linear-gradient(rgb(250, 129, 129), rgb(144, 144, 243));
+    transition: 0.9s;
+}
+#sidenav ul li{
+    list-style: none;
+    margin: 20px 20px;
+    position: relative;
+}
+#sidenav ul li::after{
+    content: '';
+    width: 00%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: blue;
+    transition: 0.5s;
+}
+#sidenav ul li:hover::after{
+    width: 50%;
+}
+#sidenav ul li a{
+  color: #000;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  
+}
+#menubtn{
+    /* border: 1px solid black; */
+    width: 50px;
+    height: 50px;
+    /* background: #009688; */
+   text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius:3px ;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img{
+    width: 30px;
+    margin-top: 20px;
+}
+@media (max-width:549px) {
+    .sad{
+        font-size: 23px;
+    }
+    .sae{
+        font-size: 17px;
+    }
+    .cane{
+        display: block;
+        height: 90vh;
+        width: 80%;
+    }
+    .sui{
+        margin: 23px auto;
+        margin-left: 100px;
+    }
+    #class{
+        height: 120vh;
+    }
+}
+@media (min-width:550px) and (max-width:1300px) {
+    .sad{
+        font-size: 28px;
+    }
+    .sae{
+        font-size: 20px;
+    }
+    .cane{
+        width: 90%;
+    }
+    .sui{
+       width: 100%;
+    }
+}

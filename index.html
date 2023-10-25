@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>automobile</title>
+    <link rel="stylesheet" href="automobile.css">
+</head>
+<body>
+ <section class="container">
+<img src="image/car.png" alt="" class="logo">
+<div class="banner-text">
+    <h1>Sam's automobile</h1>
+    <p>We're here to please your auto desires</p>
+    <div class="btn">
+<a href="#"><span></span>Explore</a>
+    </div>
+</div>
+ </section>
+ <div id="sidenav">
+    <nav>
+        <ul>
+            <li><a href="#">Car Type</a></li>
+            <li><a href="#">Order Online</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="stores.html">Stores</a></li>
+            <li><a href="Sign in.html">Sign up</a></li>
+            <li><a href="Lottery.html">Lottery</a></li>
+        </ul>
+    </nav>
+ </div>
+ <div id="menubtn">
+    <img src="image/menu.png" alt="" id="menu">
+ </div>
+
+
+<div class="jdp">
+ <section class="sk">
+<div class="sam">
+    <p class="w"><span>-</span>Want to know Our Priority?<span>-</span></p>
+    <p class="x">Sam's Automobile has specifically gotten cars that not only match the current trend</p>
+    <p class="x">but are also specifically engineered to suit every customer perfectly</p>
+</div>
+<div class="box">
+<div class="boxer">
+    <p class="p">WE SPECIALIZE IN</p>
+    <div class="con">
+        <div class="ip">
+            <p class="sp">Repair</p>
+            <div class="cone">
+                <img src="image/wash.jpg" alt="">
+                <p>we have employed competent engineers<br>to repair the vehicles 
+                    of our customers<br>in order to avoid negative feedback</p>
+            </div>
+        </div>
+        <div class="ip">
+            <p class="sp">Wash</p>
+            <div class="cone">
+                <img src="image/wash.jpg" alt="">
+                <p>we have employed competent engineers<br>to repair the vehicles 
+                    of our customers<br>in order to avoid negative feedback</p>
+            </div>
+        </div>
+        <div class="ip">
+            <p class="sp">Care</p>
+            <div class="cone">
+                <img src="image/wash.jpg" alt="">
+                <p>we have employed competent engineers<br>to repair the vehicles 
+                    of our customers<br>in order to avoid negative feedback</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+ </section>
+</div>
+
+<section class="choose">
+    <p class="ask">WHY CHOOSE US</p>
+    <div class="dstv">
+        <div class="wods">
+            <p class="tv">Experienced Engineers</p>
+            <p class="tvs">we have employed competent engineers<br>to repair the vehicles 
+                of our customers in order to avoid negative feedback</p>
+        </div>
+        <div class="imh">
+        </div>
+    </div>
+    <div class="fstv">
+        <div class="bods">
+            <p class="dv">Rugged Cars</p>
+            <p class="dvs">we have employed competent engineers<br>to repair the vehicles 
+                of our customers in order to avoid negative feedback</p>
+        </div>
+        <div class="imk">
+        </div>
+    </div>
+    <div class="gstv">
+        <div class="hods">
+            <p class="hv">Night beauty</p>
+            <p class="hvs">we have employed competent engineers<br>to repair the vehicles 
+                of our customers in order to avoid negative feedback</p>
+        </div>
+        <div class="ims">
+        </div>
+    </div>
+</section>
+
+<section class="hut">
+<div class="ini">
+    <p>OUR TOP CHOICE</p>
+    <div class="svg">
+    <div class="vid">
+        <video loop autoplay muted plays-inline>
+<source src="video/camry.mp4" type="video/mp4">
+        </video>
+    </div>
+    <p>TOYOTA SPIDER</p>
+</div>
+</div>
+</section>
+
+ <script>
+    var menubtn = document.getElementById("menubtn")
+    var sidenav = document.getElementById("sidenav")
+    var menu = document.getElementById("menu")
+
+    menubtn.onclick = function(){
+        if(sidenav.style.right =="-250px"){
+            sidenav.style.right ="0";
+            menu.src ="image/close.png";
+        }
+        else{
+            sidenav.style.right ="-250px";
+            menu.src ="image/menu.png";
+        }
+    }
+ </script>
+</body>
+</html>
